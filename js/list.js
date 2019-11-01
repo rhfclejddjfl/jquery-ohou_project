@@ -14,9 +14,10 @@ List.prototype.setValue = function () {
 
 List.prototype.setEvent = function () {
   $('#btnScrapView').on('click', function () {
-    var list = []
+    $(this).toggleClass('active')
 
-    if ($(this).is(':checked')) {
+    var list = []
+    if ($(this).hasClass('active')) {
       $.each($list.val.scrapList, function (i, v) {
         v['scrapIcon'] = './img/blue@2x.png'
         list.push($.hmtmpl($list.temp.list, v))
