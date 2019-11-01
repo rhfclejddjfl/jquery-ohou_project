@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+/****************************************************************************************
+***********common
+/****************************************************************************************/
+html, body, div, span, applet, object, iframe,select,input,textarea,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,textarea,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;padding: 0;border: 0;vertical-align: baseline;font-weight: normal;color: #333;word-break: break-word;font-size: 14px;
+}
+html, body{width: 100%; height: 100%; background: #ffffff; -webkit-touch-callout: none !important;}
+a{text-decoration: none; color: inherit;}
+table{border-collapse: collapse; border-spacing: 0;}
+table th{font-weight: normal;}
+ul{list-style: none;}
+i{font-style: normal;}
+input{ outline-style:none;}
+img{display: block; width: 100%; height: 100%;}
+
+
+body{
+	width: 1132px;
+	margin: 0 auto;
+}
+
+
+header {
+	top: 0;
+	width: 100%;
+	z-index: 5000;
+}
+header .search_wrapper{
+	margin: 40px 10px 20px;
+	height: 37px;
+	position: relative;
+}
+
+input[type="checkbox"] + label {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	border: 1px solid #35C5F0;
+	background-color: #35C5F0;
+	cursor: pointer;
+}
+
+.content_wrapper{
+	width: 100%;
+}
+.content_wrapper ul:after{
+	clear: both;
+	content: "";
+	display: block;
+}
+.content_wrapper ul li{
+	width: 25%;
+	float: left;
+	margin: 30px 0 0;
+}
+
+.content_wrapper ul li:hover{
+	opacity: 0.9;
+}
+
+.content_wrapper ul li .card{
+	margin: 0 10px;
+}
+
+.profile_wrapper{
+	margin: 0 0 10px;
+}
+.profile_wrapper:after{
+	clear: both;
+	content: "";
+	display: block;
+}
+
+.profile_wrapper .profile_img{
+	width: 36px;
+	height: 36px;
+	float: left;
+}
+
+.profile_wrapper strong{
+	float: left;
+	display: block;
+	line-height: 36px;
+	margin: 0 0 0 10px;
+	font-family: AppleSDGothicNeo;
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.74);
+}
+
+.thumbnail_wrapper{
+	position: relative;
+}
+
+.thumbnail_wrapper .thumbnail_img{
+	border-radius: 10px;
+}
+
+.thumbnail_wrapper .scrap_icon{
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+
+
+
